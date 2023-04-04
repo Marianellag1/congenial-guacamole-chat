@@ -12,7 +12,7 @@
     /*sub-heading at the top of the app UI*/
     --moderate-violet: hsl(276, 55%, 52%);
     /*chat on the left*/
-    --desaturate-dark-violet: 271, 15%, 43%;
+    --desaturate-dark-violet: hsl(271, 15%, 43%);
     /*chat on the right*/
     --grayish-blue: hsl(206, 6%, 79%);
     /*placeholder text*/
@@ -43,4 +43,92 @@
 body {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
+    background-color: var(--light-grayish-violet);
 }
+
+span {
+    float: right;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.one {
+    border: solid;
+    width: 450px;
+    padding: .625rem;
+    background-color: var(--light-grayish-violet);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: var(--white);
+    margin-bottom: .625rem;
+    background: linear-gradient(52deg, var(--light-violet)38%, var(--light-magenta)80%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.samuel img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.chat p {
+    padding: .625rem;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: .625rem 0;
+}
+
+.purple p {
+    background-color: hsl(276, 55%, 52%, 0.1);
+    color: var(--moderate-violet);
+}
+
+.white {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.white p {
+background-color: hsl(271, 15%, 43%, 0.1);
+color: var(--desaturate-dark-violet);
+}
+
+.doggie {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.doggie img {
+    border-radius: 15px;
+    width: 65px;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .together {
+    display: grid;
+    grid-template-columns: auto auto;
+} */
