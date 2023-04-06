@@ -44,6 +44,7 @@ body {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
     background-color: var(--light-grayish-violet);
+
 }
 
 span {
@@ -63,11 +64,25 @@ span {
     grid-template-columns: auto auto;
 }
 
+.white-border {
+    border: solid;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+.white-box {
+    width: 230px;
+    padding: 1rem;
+    border: solid;
+    border-radius: 40px;
+}
+
 .one {
     border: solid;
     width: 450px;
     padding: .625rem;
     background-color: var(--light-grayish-violet);
+    border-radius: 40px;
 }
 
 .header {
@@ -76,10 +91,10 @@ span {
     color: var(--white);
     margin-bottom: .625rem;
     background: linear-gradient(52deg, var(--light-violet)38%, var(--light-magenta)80%);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 2rem 1rem 1rem 1rem;
 }
 
