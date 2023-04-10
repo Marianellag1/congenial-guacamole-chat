@@ -44,7 +44,8 @@ body {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
     background-color: var(--light-grayish-violet);
-
+    display: flex;
+    justify-content: center;
 }
 
 span {
@@ -62,27 +63,45 @@ span {
 .wrapper {
     display: grid;
     grid-template-columns: auto auto;
+    width: 900px;
+    /* position: relative; */
 }
 
 .white-border {
     border: solid;
     padding: 1rem;
     border-radius: 40px;
+    background-color: var(--white);
 }
 
 .white-box {
     width: 230px;
     padding: 1rem;
     border: solid;
-    border-radius: 40px;
+    /* position: absolute; */
+    left: 90px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--white);
+
 }
 
 .one {
     border: solid;
-    width: 450px;
-    padding: .625rem;
+    width: 380px;
     background-color: var(--light-grayish-violet);
     border-radius: 40px;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+::-webkit-scrollbar {
+    width: 1px; /*able to scroll on screen of phone*/
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px var(--white);
+    border-radius: 10px; /*line of track */
 }
 
 .header {
@@ -91,8 +110,6 @@ span {
     color: var(--white);
     margin-bottom: .625rem;
     background: linear-gradient(52deg, var(--light-violet)38%, var(--light-magenta)80%);
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 2rem 1rem 1rem 1rem;
@@ -122,8 +139,8 @@ span {
 }
 
 .white p {
-background-color: hsl(271, 15%, 43%, 0.1);
-color: var(--desaturate-dark-violet);
+    background-color: hsl(271, 15%, 43%, 0.1);
+    color: var(--desaturate-dark-violet);
 }
 
 .doggie {
@@ -143,7 +160,6 @@ color: var(--desaturate-dark-violet);
     align-items: center;
 }
 
-/* .together {
-    display: grid;
-    grid-template-columns: auto auto;
-} */
+.message {
+    border: solid;
+}
