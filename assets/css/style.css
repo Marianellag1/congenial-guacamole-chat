@@ -8,30 +8,33 @@
 }
 
 :root {
-    --pale-violet: hsl(276, 100%, 81%);
+    /* TEXT */
     /*sub-heading at the top of the app UI*/
-    --moderate-violet: hsl(276, 55%, 52%);
+    --pale-violet: hsl(276, 100%, 81%);
     /*chat on the left*/
-    --desaturate-dark-violet: hsl(271, 15%, 43%);
+    --moderate-violet: hsl(276, 55%, 52%);
     /*chat on the right*/
-    --grayish-blue: hsl(206, 6%, 79%);
+    --desaturate-dark-violet: hsl(271, 15%, 43%);
     /*placeholder text*/
-    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --grayish-blue: hsl(206, 6%, 79%);
     /*main heading*/
-    --dark-grayish-violet: hsl(270, 7%, 64%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
     /* paragraph*/
+    --dark-grayish-violet: hsl(270, 7%, 64%);
     /*----------------------------------------------------------------*/
-    --light-magenta: hsl(293, 100%, 63%);
+    /*GRADIENTS*/
     /*are applied as a linear gradient*/
+    --light-magenta: hsl(293, 100%, 63%);
     --light-violet: hsl(264, 100%, 61%);
     /*----------------------------------------------------------------*/
+    /*SECONDARY*/
     --white: hsl(0, 0%, 100%);
-    --light-grayish-violet: hsl(270, 20%, 96%);
     /*app background*/
-    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
     /*submit button background*/
-    --very-light-magenta: hsl(289, 100%, 72%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
     /*radio button outline*/
+    --very-light-magenta: hsl(289, 100%, 72%);
 }
 
 * {
@@ -41,125 +44,6 @@
 }
 
 body {
-    font-size: 16px;
     font-family: 'Rubik', sans-serif;
-    background-color: var(--light-grayish-violet);
-    display: flex;
-    justify-content: center;
-}
-
-span {
-    float: right;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 900px;
-    /* position: relative; */
-}
-
-.white-border {
-    border: solid;
-    padding: 1rem;
-    border-radius: 40px;
-    background-color: var(--white);
-}
-
-.white-box {
-    width: 230px;
-    padding: 1rem;
-    border: solid;
-    /* position: absolute; */
-    left: 90px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: var(--white);
-
-}
-
-.one {
-    border: solid;
-    width: 380px;
-    background-color: var(--light-grayish-violet);
-    border-radius: 40px;
-    overflow-y: scroll;
-    height: 600px;
-}
-
-::-webkit-scrollbar {
-    width: 1px; /*able to scroll on screen of phone*/
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px var(--white);
-    border-radius: 10px; /*line of track */
-}
-
-.header {
-    display: grid;
-    grid-template-columns: auto auto;
-    color: var(--white);
-    margin-bottom: .625rem;
-    background: linear-gradient(52deg, var(--light-violet)38%, var(--light-magenta)80%);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 2rem 1rem 1rem 1rem;
-}
-
-.samuel img {
-    width: 45px;
-    border-radius: 50%;
-}
-
-.chat p {
-    padding: .625rem;
-    border-radius: 10px;
-    max-width: 50%;
-    margin: .625rem 0;
-}
-
-.purple p {
-    background-color: hsl(276, 55%, 52%, 0.1);
-    color: var(--moderate-violet);
-}
-
-.white {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-}
-
-.white p {
-    background-color: hsl(271, 15%, 43%, 0.1);
-    color: var(--desaturate-dark-violet);
-}
-
-.doggie {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.doggie img {
-    border-radius: 15px;
-    width: 65px;
-}
-
-.two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.message {
-    border: solid;
+    font-size: 16px;
 }
